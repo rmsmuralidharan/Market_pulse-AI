@@ -1,3 +1,0 @@
-[ 2026-08-12 20:19:08,101 ] 15 root - INFO - Starting Nifty 50 data ingestion
-[ 2026-08-12 20:19:09,439 ] 36 root - INFO - NIFTY 50 data downloaded succcessfully. Records: 1235
-[ 2026-08-12 20:19:09,439 ] 41 root - INFO - Raw data saved at: project_data/raw/nifty50\nifty50_raw.csv

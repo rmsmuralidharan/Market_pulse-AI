@@ -20,11 +20,14 @@ class DataIngestion:
                 self.symbol,
                 period="5y",
                 interval='1d',
-                auto_adjust=False
+                auto_adjust=False,
+                multi_level_index=False
             )
 
             if data.empty:
                 raise Exception("No data received from yfinance")
+
+            data.reset_index(inplace=True)
 
             raw_file_path = os.path.join(
                 self.raw_data_dir,
