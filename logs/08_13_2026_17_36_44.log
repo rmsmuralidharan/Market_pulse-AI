@@ -1,0 +1,28 @@
+[ 2026-08-13 17:36:44,658 ] 22 root - INFO - Starting data preprocessing
+[ 2026-08-13 17:36:44,676 ] 29 root - INFO - Train shape: (829, 35), Validataion shape: (177, 35), Test shape: (179, 35) 
+[ 2026-08-13 17:36:44,705 ] 66 root - INFO - Feature scaling completed successfully
+[ 2026-08-13 17:36:44,706 ] 13 root - INFO - Starting sequence creation
+[ 2026-08-13 17:36:44,706 ] 15 root - INFO - Input x shape: (829, 33)
+[ 2026-08-13 17:36:44,706 ] 17 root - INFO - Input y shape: (829,)
+[ 2026-08-13 17:36:44,708 ] 39 root - INFO - Sequence creation completed
+[ 2026-08-13 17:36:44,708 ] 41 root - INFO - X sequence shape: (799, 30, 33), Y sequence shape: (799,)
+[ 2026-08-13 17:36:44,709 ] 13 root - INFO - Starting sequence creation
+[ 2026-08-13 17:36:44,733 ] 15 root - INFO - Input x shape: (177, 33)
+[ 2026-08-13 17:36:44,733 ] 17 root - INFO - Input y shape: (177,)
+[ 2026-08-13 17:36:44,734 ] 39 root - INFO - Sequence creation completed
+[ 2026-08-13 17:36:44,734 ] 41 root - INFO - X sequence shape: (147, 30, 33), Y sequence shape: (147,)
+[ 2026-08-13 17:36:44,734 ] 13 root - INFO - Starting sequence creation
+[ 2026-08-13 17:36:44,734 ] 15 root - INFO - Input x shape: (179, 33)
+[ 2026-08-13 17:36:44,734 ] 17 root - INFO - Input y shape: (179,)
+[ 2026-08-13 17:36:44,734 ] 39 root - INFO - Sequence creation completed
+[ 2026-08-13 17:36:44,735 ] 41 root - INFO - X sequence shape: (149, 30, 33), Y sequence shape: (149,)
+[ 2026-08-13 17:36:44,735 ] 23 root - INFO - Starting baseline model training
+[ 2026-08-13 17:36:44,735 ] 25 root - INFO - Training input shape: (799, 33)
+[ 2026-08-13 17:36:44,771 ] 32 root - INFO - Baseline model Training Completed
+[ 2026-08-13 17:36:44,772 ] 44 root - INFO - Generating prediction for shape: (147, 33)
+[ 2026-08-13 17:36:44,772 ] 69 root - INFO - Evaluating the baseline model
+[ 2026-08-13 17:36:44,790 ] 107 root - ERROR - Error ocurred during model evalution
+Traceback (most recent call last):
+  File "D:\MarketPulse-AI\MarketPulse_AI_project\models\baseline_model.py", line 94, in evaluate
+    f"Accuracy: {accuracy}, "
+ValueError: Unknown format code 'f' for object of type 'str'
