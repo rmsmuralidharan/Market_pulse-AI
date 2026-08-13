@@ -1,0 +1,22 @@
+[ 2026-08-13 13:09:07,106 ] 15 root - INFO - Starting data transformation
+[ 2026-08-13 13:09:07,122 ] 23 root - INFO - Loaded 1235 records for transformation
+[ 2026-08-13 13:09:07,125 ] 39 root - INFO - No missing values detected
+[ 2026-08-13 13:09:07,126 ] 53 root - INFO - No duolicates dates detected
+[ 2026-08-13 13:09:07,127 ] 69 root - INFO - Numerical columns are validated successfully
+[ 2026-08-13 13:09:07,129 ] 80 root - INFO - Target column created successfully
+[ 2026-08-13 13:09:07,145 ] 113 root - INFO - Transformed data saved at: project_data/processed/nifty50\nifty50_transformed.csv
+[ 2026-08-13 13:09:07,146 ] 22 root - INFO - Starting feature engineering
+[ 2026-08-13 13:09:07,151 ] 28 root - INFO - Loaded 1234 records for feature engineering
+[ 2026-08-13 13:09:07,208 ] 307 root - ERROR - Error ocurred during festure engineering
+Traceback (most recent call last):
+  File "D:\MarketPulse-AI\MarketPulse_AI_project\components\feature_engineering.py", line 250, in initiate_feature_engineering
+    df = df[selected_columns]
+         ~~^^^^^^^^^^^^^^^^^^
+  File "D:\MarketPulse-AI\venv\Lib\site-packages\pandas\core\frame.py", line 4384, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MarketPulse-AI\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6302, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "D:\MarketPulse-AI\venv\Lib\site-packages\pandas\core\indexes\base.py", line 6355, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['Open_Close_Change', 'EMA_50', 'Volatility_10', 'Volatility_20', 'Volume_Change', 'Relative_Volume', 'Return_Lag_1', 'Return_Lag_2', 'Return_Lag_3', 'Return_Lag_5', 'Volume_Lag_1'] not in index"
