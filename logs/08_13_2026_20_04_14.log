@@ -1,0 +1,13 @@
+[ 2026-08-13 20:04:14,293 ] 15 root - INFO - Starting data transformation
+[ 2026-08-13 20:04:14,305 ] 23 root - INFO - Loaded 4638 records for transformation
+[ 2026-08-13 20:04:14,306 ] 39 root - INFO - No missing values detected
+[ 2026-08-13 20:04:14,306 ] 53 root - INFO - No duolicates dates detected
+[ 2026-08-13 20:04:14,307 ] 69 root - INFO - Numerical columns are validated successfully
+[ 2026-08-13 20:04:14,308 ] 80 root - INFO - Target column created successfully
+[ 2026-08-13 20:04:14,327 ] 113 root - INFO - Transformed data saved at: project_data/processed/nifty50\nifty50_transformed.csv
+[ 2026-08-13 20:04:14,327 ] 22 root - INFO - Starting feature engineering
+[ 2026-08-13 20:04:14,333 ] 28 root - INFO - Loaded 4637 records for feature engineering
+[ 2026-08-13 20:04:14,354 ] 303 root - INFO - Removed 1305due to feature generation
+[ 2026-08-13 20:04:14,451 ] 328 root - INFO - Feature engineering completed successfully
+[ 2026-08-13 20:04:14,451 ] 332 root - INFO - feature dataset saved at: project_data/processed/nifty50\nifty50_features.csv
+[ 2026-08-13 20:04:14,451 ] 337 root - INFO - Final feature dataset shape: (3332, 35)

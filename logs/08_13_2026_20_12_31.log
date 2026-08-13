@@ -1,0 +1,45 @@
+[ 2026-08-13 20:12:31,462 ] 22 root - INFO - Starting data preprocessing
+[ 2026-08-13 20:12:31,487 ] 29 root - INFO - Train shape: (2332, 35), Validataion shape: (499, 35), Test shape: (501, 35) 
+[ 2026-08-13 20:12:31,505 ] 66 root - INFO - Feature scaling completed successfully
+[ 2026-08-13 20:12:31,506 ] 20 root - INFO - Starting sequence creation
+[ 2026-08-13 20:12:31,506 ] 22 root - INFO - Input x shape: (2332, 33)
+[ 2026-08-13 20:12:31,506 ] 23 root - INFO - Input y shape: (2332,)
+[ 2026-08-13 20:12:31,513 ] 46 root - INFO - Sequence creation completed
+[ 2026-08-13 20:12:31,513 ] 50 root - INFO - X sequence shape: (2302, 30, 33), Y sequence shape: (2302,)
+[ 2026-08-13 20:12:31,514 ] 80 root - INFO - Starting evaluation sequence creation
+[ 2026-08-13 20:12:31,516 ] 122 root - INFO - Evaluation sequence shape: (499, 30, 33)
+[ 2026-08-13 20:12:31,516 ] 127 root - INFO - Evaluation target shape: (499,)
+[ 2026-08-13 20:12:31,516 ] 80 root - INFO - Starting evaluation sequence creation
+[ 2026-08-13 20:12:31,517 ] 122 root - INFO - Evaluation sequence shape: (501, 30, 33)
+[ 2026-08-13 20:12:31,517 ] 127 root - INFO - Evaluation target shape: (501,)
+[ 2026-08-13 20:12:31,517 ] 24 root - INFO - Starting baseline model training
+[ 2026-08-13 20:12:31,517 ] 26 root - INFO - Training input shape: (2302, 33)
+[ 2026-08-13 20:12:31,937 ] 33 root - INFO - Baseline model Training Completed
+[ 2026-08-13 20:12:31,937 ] 45 root - INFO - Generating prediction for shape: (499, 33)
+[ 2026-08-13 20:12:32,037 ] 70 root - INFO - Evaluating the baseline model
+[ 2026-08-13 20:12:32,048 ] 94 root - INFO - Accuracy: 0.44288577154308617, Classification Report:               precision    recall  f1-score   support
+
+           0       0.42      0.84      0.56       211
+           1       0.56      0.15      0.24       288
+
+    accuracy                           0.44       499
+   macro avg       0.49      0.50      0.40       499
+weighted avg       0.50      0.44      0.38       499
+, ROC-AUC: 
+0.5020, Confusion matrix: 
+[[177  34]
+ [244  44]]
+[ 2026-08-13 20:12:32,049 ] 45 root - INFO - Generating prediction for shape: (501, 33)
+[ 2026-08-13 20:12:32,136 ] 70 root - INFO - Evaluating the baseline model
+[ 2026-08-13 20:12:32,150 ] 94 root - INFO - Accuracy: 0.5049900199600799, Classification Report:               precision    recall  f1-score   support
+
+           0       0.50      0.99      0.67       249
+           1       0.75      0.02      0.05       252
+
+    accuracy                           0.50       501
+   macro avg       0.63      0.51      0.36       501
+weighted avg       0.63      0.50      0.35       501
+, ROC-AUC: 
+0.4827, Confusion matrix: 
+[[247   2]
+ [246   6]]

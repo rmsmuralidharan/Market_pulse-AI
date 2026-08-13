@@ -1,0 +1,51 @@
+[ 2026-08-13 20:14:16,521 ] 22 root - INFO - Starting data preprocessing
+[ 2026-08-13 20:14:16,547 ] 29 root - INFO - Train shape: (2332, 35), Validataion shape: (499, 35), Test shape: (501, 35) 
+[ 2026-08-13 20:14:16,566 ] 66 root - INFO - Feature scaling completed successfully
+[ 2026-08-13 20:14:16,567 ] 20 root - INFO - Starting sequence creation
+[ 2026-08-13 20:14:16,567 ] 22 root - INFO - Input x shape: (2332, 33)
+[ 2026-08-13 20:14:16,567 ] 23 root - INFO - Input y shape: (2332,)
+[ 2026-08-13 20:14:16,574 ] 46 root - INFO - Sequence creation completed
+[ 2026-08-13 20:14:16,575 ] 50 root - INFO - X sequence shape: (2302, 30, 33), Y sequence shape: (2302,)
+[ 2026-08-13 20:14:16,575 ] 80 root - INFO - Starting evaluation sequence creation
+[ 2026-08-13 20:14:16,580 ] 122 root - INFO - Evaluation sequence shape: (499, 30, 33)
+[ 2026-08-13 20:14:16,580 ] 127 root - INFO - Evaluation target shape: (499,)
+[ 2026-08-13 20:14:16,580 ] 80 root - INFO - Starting evaluation sequence creation
+[ 2026-08-13 20:14:16,582 ] 122 root - INFO - Evaluation sequence shape: (501, 30, 33)
+[ 2026-08-13 20:14:16,582 ] 127 root - INFO - Evaluation target shape: (501,)
+[ 2026-08-13 20:14:16,582 ] 29 root - INFO - starting XGBoost training
+[ 2026-08-13 20:14:16,582 ] 31 root - INFO - Training shape: (2302, 33)
+[ 2026-08-13 20:14:16,743 ] 38 root - INFO - XGBoost model training completed
+[ 2026-08-13 20:14:16,743 ] 48 root - INFO - Generating XGBoost prediction for shape: (499, 33)
+[ 2026-08-13 20:14:16,745 ] 72 root - INFO - Evaluating XGBoost model
+[ 2026-08-13 20:14:16,774 ] 96 root - INFO - Accuracy: 0.4469
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.42      0.87      0.57       211
+           1       0.59      0.14      0.22       288
+
+    accuracy                           0.45       499
+   macro avg       0.51      0.50      0.40       499
+weighted avg       0.52      0.45      0.37       499
+
+ROC-AUC: 0.5044
+Confusion Matrix:
+[[184  27]
+ [249  39]]
+[ 2026-08-13 20:14:16,775 ] 48 root - INFO - Generating XGBoost prediction for shape: (501, 33)
+[ 2026-08-13 20:14:16,777 ] 72 root - INFO - Evaluating XGBoost model
+[ 2026-08-13 20:14:16,798 ] 96 root - INFO - Accuracy: 0.4970
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.50      1.00      0.66       249
+           1       0.50      0.00      0.01       252
+
+    accuracy                           0.50       501
+   macro avg       0.50      0.50      0.34       501
+weighted avg       0.50      0.50      0.33       501
+
+ROC-AUC: 0.4630
+Confusion Matrix:
+[[248   1]
+ [251   1]]

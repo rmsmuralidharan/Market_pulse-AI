@@ -55,14 +55,16 @@ if __name__ == "__main__":
     )
 
     X_validation_seq, y_validation_seq = (
-        sequence_creator.create_sequence(
+        sequence_creator.create_evaluation_sequences(
+            X_train_scaled,
             X_validation_scaled,
             y_validation
         )
     )
 
     X_test_seq, y_test_seq = (
-        sequence_creator.create_sequence(
+        sequence_creator.create_evaluation_sequences(
+            X_validation_scaled,
             X_test_scaled,
             y_test
         )

@@ -1,0 +1,3 @@
+[ 2026-08-13 20:05:43,941 ] 22 root - INFO - Starting data preprocessing
+[ 2026-08-13 20:05:43,967 ] 29 root - INFO - Train shape: (2332, 35), Validataion shape: (499, 35), Test shape: (501, 35) 
+[ 2026-08-13 20:05:43,983 ] 66 root - INFO - Feature scaling completed successfully

@@ -1,0 +1,7 @@
+[ 2026-08-13 20:01:31,205 ] 15 root - INFO - Starting data transformation
+[ 2026-08-13 20:01:31,220 ] 23 root - INFO - Loaded 4638 records for transformation
+[ 2026-08-13 20:01:31,221 ] 39 root - INFO - No missing values detected
+[ 2026-08-13 20:01:31,222 ] 53 root - INFO - No duolicates dates detected
+[ 2026-08-13 20:01:31,223 ] 69 root - INFO - Numerical columns are validated successfully
+[ 2026-08-13 20:01:31,224 ] 80 root - INFO - Target column created successfully
+[ 2026-08-13 20:01:31,243 ] 113 root - INFO - Transformed data saved at: project_data/processed/nifty50\nifty50_transformed.csv

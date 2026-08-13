@@ -1,6 +1,0 @@
-[ 2026-08-13 11:22:04,454 ] 15 root - INFO - Starting Nifty 50 data ingestion
-[ 2026-08-13 11:22:05,532 ] 39 root - INFO - NIFTY 50 data downloaded succcessfully. Records: 1235
-[ 2026-08-13 11:22:05,532 ] 44 root - INFO - Raw data saved at: project_data/raw/nifty50\nifty50_raw.csv
-[ 2026-08-13 11:22:05,532 ] 16 root - INFO - Starting data validation
-[ 2026-08-13 11:22:05,539 ] 19 root - INFO - loaded raw data with 1235 records
-[ 2026-08-13 11:22:05,551 ] 143 root - ERROR - Invalid OHLC relationships detected

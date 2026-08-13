@@ -1,0 +1,55 @@
+[ 2026-08-13 20:16:23,957 ] 22 root - INFO - Starting data preprocessing
+[ 2026-08-13 20:16:23,980 ] 29 root - INFO - Train shape: (2332, 35), Validataion shape: (499, 35), Test shape: (501, 35) 
+[ 2026-08-13 20:16:23,999 ] 66 root - INFO - Feature scaling completed successfully
+[ 2026-08-13 20:16:23,999 ] 20 root - INFO - Starting sequence creation
+[ 2026-08-13 20:16:23,999 ] 22 root - INFO - Input x shape: (2332, 33)
+[ 2026-08-13 20:16:23,999 ] 23 root - INFO - Input y shape: (2332,)
+[ 2026-08-13 20:16:24,004 ] 46 root - INFO - Sequence creation completed
+[ 2026-08-13 20:16:24,004 ] 50 root - INFO - X sequence shape: (2302, 30, 33), Y sequence shape: (2302,)
+[ 2026-08-13 20:16:24,004 ] 80 root - INFO - Starting evaluation sequence creation
+[ 2026-08-13 20:16:24,009 ] 122 root - INFO - Evaluation sequence shape: (499, 30, 33)
+[ 2026-08-13 20:16:24,009 ] 127 root - INFO - Evaluation target shape: (499,)
+[ 2026-08-13 20:16:24,009 ] 80 root - INFO - Starting evaluation sequence creation
+[ 2026-08-13 20:16:24,010 ] 122 root - INFO - Evaluation sequence shape: (501, 30, 33)
+[ 2026-08-13 20:16:24,010 ] 127 root - INFO - Evaluation target shape: (501,)
+[ 2026-08-13 20:16:24,674 ] 149 tensorflow - WARNING - From D:\MarketPulse-AI\venv\Lib\site-packages\keras\src\backend\tensorflow\core.py:233: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+[ 2026-08-13 20:16:24,824 ] 464 tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[ 2026-08-13 20:16:24,826 ] 154 root - INFO - Starting Transformer model training
+[ 2026-08-13 20:16:24,826 ] 158 root - INFO - Training input shape: (2302, 30, 33)
+[ 2026-08-13 20:16:24,826 ] 163 root - INFO - Validation input shape: (499, 30, 33)
+[ 2026-08-13 20:16:33,796 ] 188 root - INFO - Transformer model training completed
+[ 2026-08-13 20:16:33,796 ] 206 root - INFO - Generating Transformer prediction for shape: (499, 30, 33)
+[ 2026-08-13 20:16:34,121 ] 241 root - INFO - Evaluating Transformer model
+[ 2026-08-13 20:16:34,142 ] 265 root - INFO - Accuracy: 0.5772
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       211
+           1       0.58      1.00      0.73       288
+
+    accuracy                           0.58       499
+   macro avg       0.29      0.50      0.37       499
+weighted avg       0.33      0.58      0.42       499
+
+ROC-AUC: 0.5252
+Confusion Matrix:
+[[  0 211]
+ [  0 288]]
+[ 2026-08-13 20:16:34,142 ] 206 root - INFO - Generating Transformer prediction for shape: (501, 30, 33)
+[ 2026-08-13 20:16:34,250 ] 241 root - INFO - Evaluating Transformer model
+[ 2026-08-13 20:16:34,263 ] 265 root - INFO - Accuracy: 0.5030
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       249
+           1       0.50      1.00      0.67       252
+
+    accuracy                           0.50       501
+   macro avg       0.25      0.50      0.33       501
+weighted avg       0.25      0.50      0.34       501
+
+ROC-AUC: 0.4939
+Confusion Matrix:
+[[  0 249]
+ [  0 252]]

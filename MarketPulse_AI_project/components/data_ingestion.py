@@ -18,7 +18,7 @@ class DataIngestion:
 
             data = yf.download(
                 self.symbol,
-                period="5y",
+                period="20y",
                 interval='1d',
                 auto_adjust=False,
                 multi_level_index=False
