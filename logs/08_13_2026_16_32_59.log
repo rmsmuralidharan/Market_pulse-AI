@@ -1,0 +1,13 @@
+[ 2026-08-13 16:32:59,862 ] 22 root - INFO - Starting data preprocessing
+[ 2026-08-13 16:32:59,884 ] 29 root - INFO - Train shape: (829, 35), Validataion shape: (177, 35), Test shape: (179, 35) 
+[ 2026-08-13 16:32:59,911 ] 66 root - INFO - Feature scaling completed successfully
+[ 2026-08-13 16:32:59,911 ] 13 root - INFO - Starting sequence creation
+[ 2026-08-13 16:32:59,911 ] 15 root - INFO - Input x shape: (829, 33)
+[ 2026-08-13 16:32:59,911 ] 17 root - INFO - Input shape: (829,)
+[ 2026-08-13 16:32:59,911 ] 35 root - INFO - Sequence creation completed
+[ 2026-08-13 16:32:59,911 ] 48 root - ERROR - Error ocurred during sequence creation
+Traceback (most recent call last):
+  File "D:\MarketPulse-AI\MarketPulse_AI_project\components\sequence_creation.py", line 38, in create_sequence
+    f"X sequence shape: {x_sequence.shape}, "
+                         ^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'shape'

@@ -192,6 +192,14 @@ class FeatureEngineering:
                 df['Volume']
                 .pct_change()
             )
+
+            df['Volume_Change'] = df['Volume_Change'].replace(
+                [np.inf, -np.inf],
+                np.nan  
+            )
+
+            ## fill missing values in volume change with 0
+            df['Volume_Change'] = df['Volume_Change'].fillna(0)
             
             df['Volume_SMA_20'] = (
                 df['Volume']

@@ -1,0 +1,18 @@
+[ 2026-08-13 16:47:21,089 ] 22 root - INFO - Starting data preprocessing
+[ 2026-08-13 16:47:21,110 ] 29 root - INFO - Train shape: (829, 35), Validataion shape: (177, 35), Test shape: (179, 35) 
+[ 2026-08-13 16:47:21,138 ] 66 root - INFO - Feature scaling completed successfully
+[ 2026-08-13 16:47:21,138 ] 13 root - INFO - Starting sequence creation
+[ 2026-08-13 16:47:21,138 ] 15 root - INFO - Input x shape: (829, 33)
+[ 2026-08-13 16:47:21,144 ] 17 root - INFO - Input y shape: (829,)
+[ 2026-08-13 16:47:21,144 ] 39 root - INFO - Sequence creation completed
+[ 2026-08-13 16:47:21,144 ] 41 root - INFO - X sequence shape: (799, 30, 33), Y sequence shape: (799,)
+[ 2026-08-13 16:47:21,144 ] 13 root - INFO - Starting sequence creation
+[ 2026-08-13 16:47:21,170 ] 15 root - INFO - Input x shape: (177, 33)
+[ 2026-08-13 16:47:21,170 ] 17 root - INFO - Input y shape: (177,)
+[ 2026-08-13 16:47:21,170 ] 39 root - INFO - Sequence creation completed
+[ 2026-08-13 16:47:21,170 ] 41 root - INFO - X sequence shape: (147, 30, 33), Y sequence shape: (147,)
+[ 2026-08-13 16:47:21,170 ] 13 root - INFO - Starting sequence creation
+[ 2026-08-13 16:47:21,170 ] 15 root - INFO - Input x shape: (179, 33)
+[ 2026-08-13 16:47:21,170 ] 17 root - INFO - Input y shape: (179,)
+[ 2026-08-13 16:47:21,170 ] 39 root - INFO - Sequence creation completed
+[ 2026-08-13 16:47:21,170 ] 41 root - INFO - X sequence shape: (149, 30, 33), Y sequence shape: (149,)

@@ -1,0 +1,32 @@
+[ 2026-08-13 15:09:51,536 ] 22 root - INFO - Starting data preprocessing
+[ 2026-08-13 15:09:51,551 ] 29 root - INFO - Train shape: (828, 35), Validataion shape: (177, 35), Test shape: (178, 35) 
+[ 2026-08-13 15:09:51,574 ] 80 root - ERROR - Error ocurred during data preprocessing
+Traceback (most recent call last):
+  File "D:\MarketPulse-AI\MarketPulse_AI_project\components\data_preprocessing.py", line 59, in initiate_data_preprocessing
+    x_train_scaled = scaler.fit_transform(x_train)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MarketPulse-AI\venv\Lib\site-packages\sklearn\utils\_set_output.py", line 319, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MarketPulse-AI\venv\Lib\site-packages\sklearn\base.py", line 969, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MarketPulse-AI\venv\Lib\site-packages\sklearn\preprocessing\_data.py", line 928, in fit
+    return self.partial_fit(X, y, sample_weight)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MarketPulse-AI\venv\Lib\site-packages\sklearn\base.py", line 1403, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MarketPulse-AI\venv\Lib\site-packages\sklearn\preprocessing\_data.py", line 965, in partial_fit
+    X = validate_data(
+        ^^^^^^^^^^^^^^
+  File "D:\MarketPulse-AI\venv\Lib\site-packages\sklearn\utils\validation.py", line 3038, in validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\MarketPulse-AI\venv\Lib\site-packages\sklearn\utils\validation.py", line 1087, in check_array
+    _assert_all_finite(
+  File "D:\MarketPulse-AI\venv\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+  File "D:\MarketPulse-AI\venv\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input X contains infinity or a value too large for dtype('float64').

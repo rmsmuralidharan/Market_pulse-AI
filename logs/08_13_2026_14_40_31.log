@@ -1,0 +1,5 @@
+[ 2026-08-13 14:40:31,949 ] 14 root - INFO - Starting data splitting
+[ 2026-08-13 14:40:31,961 ] 18 root - INFO - Loaded data from: project_data/processed/nifty50/nifty50_features.csv
+[ 2026-08-13 14:40:31,961 ] 19 root - INFO - Dataset shape: (1183, 35)
+[ 2026-08-13 14:40:31,964 ] 33 root - INFO - Train shape: (828, 35), Validation shaape: (177, 35), Test Shape: (178, 35)
+[ 2026-08-13 14:40:32,008 ] 60 root - INFO - Train/validation/test split completed successfully
