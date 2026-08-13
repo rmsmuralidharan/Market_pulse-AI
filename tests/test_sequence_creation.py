@@ -29,6 +29,7 @@ if __name__ =="__main__":
         sequence_length=30
     )  
 
+    # Training
     x_train_seq, y_train_seq = (
         sequence_creator.create_sequence(
             X_train_scaled,
@@ -36,15 +37,19 @@ if __name__ =="__main__":
         )
     )
 
+    # Validation
     x_validation_seq, y_validation_seq = (
-        sequence_creator.create_sequence(
-        X_validation_scaled,
-        y_validation
+        sequence_creator.create_evaluation_sequences(
+            X_train_scaled,
+            X_validation_scaled,
+            y_validation
         )
     )
 
+    # Test
     x_test_seq, y_test_seq = (
-        sequence_creator.create_sequence(
+        sequence_creator.create_evaluation_sequences(
+            X_validation_scaled,
             X_test_scaled,
             y_test
         )

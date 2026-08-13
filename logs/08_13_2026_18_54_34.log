@@ -1,0 +1,53 @@
+[ 2026-08-13 18:54:37,661 ] 22 root - INFO - Starting data preprocessing
+[ 2026-08-13 18:54:37,672 ] 29 root - INFO - Train shape: (829, 35), Validataion shape: (177, 35), Test shape: (179, 35) 
+[ 2026-08-13 18:54:37,691 ] 66 root - INFO - Feature scaling completed successfully
+[ 2026-08-13 18:54:37,691 ] 20 root - INFO - Starting sequence creation
+[ 2026-08-13 18:54:37,691 ] 22 root - INFO - Input x shape: (829, 33)
+[ 2026-08-13 18:54:37,691 ] 23 root - INFO - Input y shape: (829,)
+[ 2026-08-13 18:54:37,693 ] 46 root - INFO - Sequence creation completed
+[ 2026-08-13 18:54:37,693 ] 50 root - INFO - X sequence shape: (799, 30, 33), Y sequence shape: (799,)
+[ 2026-08-13 18:54:37,693 ] 80 root - INFO - Starting evaluation sequence creation
+[ 2026-08-13 18:54:37,696 ] 122 root - INFO - Evaluation sequence shape: (177, 30, 33)
+[ 2026-08-13 18:54:37,697 ] 127 root - INFO - Evaluation target shape: (177,)
+[ 2026-08-13 18:54:37,697 ] 80 root - INFO - Starting evaluation sequence creation
+[ 2026-08-13 18:54:37,697 ] 122 root - INFO - Evaluation sequence shape: (179, 30, 33)
+[ 2026-08-13 18:54:37,697 ] 127 root - INFO - Evaluation target shape: (179,)
+[ 2026-08-13 18:54:37,767 ] 464 tensorflow - WARNING - TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+[ 2026-08-13 18:54:37,769 ] 55 root - INFO - Starting LSTM model training
+[ 2026-08-13 18:54:37,769 ] 59 root - INFO - Training input shape: (799, 30, 33)
+[ 2026-08-13 18:54:37,769 ] 63 root - INFO - Validation input shape: (177, 30, 33)
+[ 2026-08-13 18:54:46,223 ] 80 root - INFO - LSTM model training completed
+[ 2026-08-13 18:54:46,223 ] 96 root - INFO - Generating LSTM prediction for shape: (177, 30, 33)
+[ 2026-08-13 18:54:46,493 ] 128 root - INFO - Evaluating LSTM model
+[ 2026-08-13 18:54:46,511 ] 152 root - INFO - Accuracy: 0.4576
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.41      0.53      0.46        77
+           1       0.53      0.40      0.45       100
+
+    accuracy                           0.46       177
+   macro avg       0.47      0.47      0.46       177
+weighted avg       0.47      0.46      0.46       177
+
+ROC-AUC: 0.4752
+Confusion Matrix:
+[[41 36]
+ [60 40]]
+[ 2026-08-13 18:54:46,511 ] 96 root - INFO - Generating LSTM prediction for shape: (179, 30, 33)
+[ 2026-08-13 18:54:46,584 ] 128 root - INFO - Evaluating LSTM model
+[ 2026-08-13 18:54:46,596 ] 152 root - INFO - Accuracy: 0.5196
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.54      0.43      0.48        92
+           1       0.50      0.61      0.55        87
+
+    accuracy                           0.52       179
+   macro avg       0.52      0.52      0.52       179
+weighted avg       0.52      0.52      0.52       179
+
+ROC-AUC: 0.5385
+Confusion Matrix:
+[[40 52]
+ [34 53]]
